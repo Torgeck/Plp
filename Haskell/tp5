@@ -1,0 +1,16 @@
+
+sumatoria :: Int -> Int
+sumatoria n 
+  | (n == 0) = 0
+  | otherwise = (n*n) + sumatoria (n-1)
+
+factorial :: Int -> Int
+factorial x 
+  | (x == 0) = 0
+  | otherwise = x + factorial(x-1)
+
+
+funcion :: Int -> Int -> Double
+funcion x n = (sumatoria n) / (factorial x)
+
+
