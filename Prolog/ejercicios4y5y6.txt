@@ -1,0 +1,48 @@
+EJERCICIO 4 UNIFICACION	
+
+point(A,B) = point(1,s(2)) 	-	Si unifican
+pre(A,B) = pre(X,Y,Z)	-	No unifican ya que hay diferente cantidad de parametros en la funcion
+6 = 3+3	-	No unifican ya que uno es un atomo y el otro es una funcion de dos atomos
+esquina(X+Y) = esquina(corrientes+cordoba)	-	Si unifican 
+Diana = diana	-	Si unifican, ya que Diana es lo mismo que X por lo tanto Diana = diana
+_ = 'Diana goes south'	-	Si unifican
+X+1-Y*2 = (X+1)-(Y*2)	-	Si unifican
+long(X, punto(A,2)) = long(Y, punto(2+1,)))	-	No unifican, salta error por el parentesis de mas.
+plus(2,2) = 4	-	No unifican
+admira(X,padre(X)) = admira(padre(U),V)	-	Si unifica
+p(q(-1,0),P2,P3) = p(P1, q(1,0), q(0,Y))	-	Si unifica
+
+EJERCICIO 5 UNIFICACION DE FORMULAS ATOMICAS
+a) L = [b|Zs]
+   X = b
+   Xs = []
+   Ys = [c, d]
+
+b) X = s(0)
+   Y = s(s(s(s(0))))
+   Z = s(s(0))
+
+c) X = [3, 4, [a]|Y]
+   L = [a]
+   N = [3]
+   M = c
+   W = [3, 5, 3]
+   Z = 3
+
+d) A = a
+   B = b
+   C = c
+   N = s(0)
+   Ms = Xs 
+
+EJERCICIO 6 EQUIVALENCIA DE LISTAS
+a) No es equivalente (Le faltan los corchetes a la cola)
+b) Es equivalente
+c) Es equivalente
+d) Es equivalente
+e) No es equivalente ya que la lista posee 4 elementos 1, 2, 3, [4,5,6,7]
+f) No es equivalente
+g) Es equivalente
+h) No es equivalente
+i) Es equivalente
+
