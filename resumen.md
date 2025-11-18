@@ -1,29 +1,33 @@
 # Resumen Materia Principios de Lenguajes de Programacion
 
-## Unidad 1 
+## Unidad 1
+
 ```
 bibliografia:
     Programming Languages: Design and Implementation - Pratt,Terrance
-        Cap 1 y 2 
+        Cap 1 y 2
     Concepts of Programming Languages - Sebesta, Robert
-        Cap 1 y 2 
+        Cap 1 y 2
 ```
 
 ### Que es un lenguaje en general?
+
 - Es un medio del que se vale cualquier individuo para comunicar ideas y experiencias a otros individuos.
 - (Ideas) Estan almacenadas en el individuo emisor y almacenadas tal vez con otra representacion en el receptor.
 
 ### Que es un lenguaje de programacion?
+
 1. Cualquier notacion para la descripcion de algoritmos y estructuras de datos (inplementadas en una computadora).
 2. Un sistema notacional formal usado para expresar procesos computacionales, con una sitaxis bien definida y una semantica asociada.
 3. Es el puente que une las ideas de humanos con receptores, en este caso computadoras. (modelo sematico humano <--> modelo computacional).
 
-Un **lenguaje de programacion** es: 
-- Un **sistema notacional** para describir **computaciones** de una forma **legible** tanto para la **maquina** como compresible para el **ser humano** 
+Un **lenguaje de programacion** es:
 
+- Un **sistema notacional** para describir **computaciones** de una forma **legible** tanto para la **maquina** como compresible para el **ser humano**
 
-#### Que es programar? 
-- Planter una solucion a un problema mediante un **Paradigma de Programacion** 
+#### Que es programar?
+
+- Planter una solucion a un problema mediante un **Paradigma de Programacion**
 - Un **Lenguaje de Programacion** es la herramienta que permite **expresar** nuestra solucion.
 
 ### Porque estudiar un lenguaje de programacion?
@@ -40,15 +44,17 @@ Un **lenguaje de programacion** es:
 Lenguajes basados en numeros -> Lenguajes de negocios -> Lenguajes de Inteligencia Artificial -> Lenguajes de Sistemas
 (Algol, FORTRAN) -> (CBL, COBOL) -> (LISP, MIT) -> (CPL, C)
 
-Los lenguajes de programacion fueron siendo actualizados o cambiando gracias a: 
-    1. Avances de HW (De tubos a supercomputadoras y microprocesadores)
-    2. Aplicaciones (Los requerimientos de las nuevas aplicaciones afectaron los disenios de nuevos lenguajes)
-    3. Metodos de programacion (Metodologias SOLID y la manera de escribir codigo de calidad)
-    4. Implementacion de Metodos
-    5. Estudios teoricos (Metodos matematicos formales expandieron nuestro conocimiento y entendimiento de las features de lenguajes)
-    6. Estandarizacion 
+Los lenguajes de programacion fueron siendo actualizados o cambiando gracias a:
 
-### Porque aparecen lenguajes nuevos? 
+1. Avances de HW (De tubos a supercomputadoras y microprocesadores)
+2. Aplicaciones (Los requerimientos de las nuevas aplicaciones afectaron los disenios de nuevos lenguajes)
+3. Metodos de programacion (Metodologias SOLID y la manera de escribir codigo de calidad)
+4. Implementacion de Metodos
+5. Estudios teoricos (Metodos matematicos formales expandieron nuestro conocimiento y entendimiento de las features de lenguajes)
+6. Estandarizacion
+
+### Porque aparecen lenguajes nuevos?
+
 - Evolucion
 - Proposito especial
 - Preferencia personal
@@ -58,6 +64,7 @@ El **Lenguaje de programacion** surge de la **vinculacion** entre las diferentes
 Otro de los factores que terminan teniendo especial relevacia es el **dominio de aplicacion** pretendido.
 
 #### Que convierte a un lenguaje en exitoso?
+
 - Poder expresivo
 - Baja curva de aprendizaje
 - Facilidad de Implementacion
@@ -65,28 +72,30 @@ Otro de los factores que terminan teniendo especial relevacia es el **dominio de
 - Excelentes compiladores
 - Inercia, economia, quien lo promueve
 
-### Atributos que hacen a un lenguaje uno "bueno"? 
+### Atributos que hacen a un lenguaje uno "bueno"?
 
-1. Claridad, simplicidad y unidad 
+1. Claridad, simplicidad y unidad
 2. Ortogonalidad
 3. Naturalidad para la aplicacion -> Sintaxis clara, proveer estructuras de datos apropiadas, operaciones, estructuras de control y sintaxis natural para el problema a resolver
 4. Soportar abstraccion
 5. Facilidad a la hora de verificar el programa -> Testeo
-6. Entorno de programacion -> Documentacion clara, editores especiales y paquetes de testeo, facilidad para mantener multiples versiones de un programa 
+6. Entorno de programacion -> Documentacion clara, editores especiales y paquetes de testeo, facilidad para mantener multiples versiones de un programa
 7. Portabilidad de programas -> Facilidad a la hora de trasladar el programa de una plataforma a otra
-8. Costo de uso: 
-    - Costo de ejecucion del programa -> optimizacion de compiladores, alocacion eficiente de registros, etc. 
-    - Costo de traduccion de un programa -> compilacion eficiente, ya que a la hora de construir un SW se compila varias veces
-    - Costo de creacion, testeo y uso de un programa 
-    - Costo de mantencion del programa
+8. Costo de uso:
+   - Costo de ejecucion del programa -> optimizacion de compiladores, alocacion eficiente de registros, etc.
+   - Costo de traduccion de un programa -> compilacion eficiente, ya que a la hora de construir un SW se compila varias veces
+   - Costo de creacion, testeo y uso de un programa
+   - Costo de mantencion del programa
 
 ### Criterio de evaluacion de los lenguajes (Lo que esta arriba)
+
 - **Readability (Legibilidad)**: La facilidad con la que se pueden leer y comprender los programas.
 - **Writability (Escribibilidad)**: La facilidad con la cual un lenguaje puede usarse para crear programas.
 - **Realiability (Fiabilidad)**: ajuste a las especificaciones (cumple las especificaciones).
 - **Costo**: los costos asociados.
 
-Caracteristicas que influyen los criterios: 
+Caracteristicas que influyen los criterios:
+
 - Simplicidad (LEC)
 - Ortoganilidad (LEC)
 - TD - Disenio de sintaxis (LEC)
@@ -97,29 +106,34 @@ Caracteristicas que influyen los criterios:
 - Aliasing (Alias) (C)
 
 #### Legibilidad
-Caracteristicas: 
+
+Caracteristicas:
+
 - **Ortoganilidad:** Basicamente significa que un conjunto pequenio de constructores primitivos, puede ser comibnado en numero relativamente pequenio a la hora de construir estructuras de control y datos. Cada combinacion es legal y con sentido.
-    - Mas facil de aprender y leer 
-    - Conjunto pequenio de constructores primitivos para combinar de pocas maneras
-    - Todas las comibnaciones son validas
-    - Sin ortoganilidad aparecen excepciones a reglas
+  - Mas facil de aprender y leer
+  - Conjunto pequenio de constructores primitivos para combinar de pocas maneras
+  - Todas las comibnaciones son validas
+  - Sin ortoganilidad aparecen excepciones a reglas
 - **Definicion de tipos de datos y estructuras:** Contar con estructuras legibles (solo uso de goto - agregado del tipo boolean)Ej: Bandera = 1 o Bandera = true
 - **Aspectos sintacticos:** Formas de los identificadores - palabras reservadas - forma y significado: constructores autodescriptivos, palabras claves significativas
 
-#### Escribibilidad 
+#### Escribibilidad
+
 - **Simplicidad y ortoganilidad**: Pocos constructores, pequenio numero de primitivas, conjunto pequenio de reglas para combinar que sean ortogonales es mejor. Mucha ortogonalidad genera una menor deteccion de errores. Si el lenguaje no es simple solo se aprende y utiliza una pequenia porcion de el.
 - **Capacidad de abstraccion**: Capacidad de definir y usar estructuras u operaciones complicadas de manera que sea posible ignorar muchos de los detalles.
-- **Expresividad**: El lenguaje posee formas relativamente convenientes de expresar ciertas operaciones, por ejemplo **contador++** en lugar de **contador = contador + 1 ** o el uso del for en lugar del while equivalente. 
+- **Expresividad**: El lenguaje posee formas relativamente convenientes de expresar ciertas operaciones, por ejemplo **contador++** en lugar de **contador = contador + 1 ** o el uso del for en lugar del while equivalente.
 
-#### Fiabilidad 
+#### Fiabilidad
+
 - **Chequeo de tipos:** Control de errores de tipos
 - **Manejo de excepciones:** Interceptar errores en tiempo de ejecicion y realizar posibles correcciones.
 - **Aliasing:** Tener dos o mas nombres para acceder a una memoria
-- **Legibilidad y escribilidad:** Si no existe metodo *natural* de expresar algoritmos requiere aproximaciones *poco naturales* 
+- **Legibilidad y escribilidad:** Si no existe metodo _natural_ de expresar algoritmos requiere aproximaciones _poco naturales_
 
-#### Costo 
-- Aprender 
-- Usar 
+#### Costo
+
+- Aprender
+- Usar
 - Compilacion
 - Ejecucion
 - Sistema de implementacion del lenguaje
@@ -129,255 +143,439 @@ Caracteristicas:
 - Licencias
 
 ### Influencia en el disenio de los Lenguajes de Programacion
-    - **Arquitectura de las computadoras:** Los lenguajes se desarrollan alrededor de las arquitectura prevalentes.
-    - **Metodologias de Programacion:** Las nuevas metodologias de desarrollo de software guian los nuevos paradigmas de programacion, y por ende, los nuevos lenguajes de programacion
 
-### Estandarizacion de Lenguajes 
+- **Arquitectura de las computadoras:** Los lenguajes se desarrollan alrededor de las arquitectura prevalentes.
+- **Metodologias de Programacion:** Las nuevas metodologias de desarrollo de software guian los nuevos paradigmas de programacion, y por ende, los nuevos lenguajes de programacion
+
+### Estandarizacion de Lenguajes
+
 - Estandards propietarios -> Definiciones hechas por la compania que desarollo el lenguaje.
 - Estandards de consenso -> Son documentos producidos por organizaciones basados en la aceptacion de participantes relevantes
 
-Para estandarizar un lenguaje efectivamente se necesitan resolver 3 problemas: 
-    - Cuando se va a estandarizar el lenguaje?
-    - Que significa para un programa aderirse a un estandar o para un compilador compilar un estandar? 
-    - Cuando un estandar se pone viejo o cuando necesita ser modificado?
+Para **estandarizar** un lenguaje **efectivamente** se necesitan resolver 3 problemas:
+
+- Cuando se va a estandarizar el lenguaje?
+- Que significa para un programa aderirse a un estandar o para un compilador compilar un estandar?
+- Cuando un estandar se pone viejo o cuando necesita ser modificado?
 
 ### Clasificacion de lenguajes
+
 - Dominio de aplicacion:
-    - Aplicaciones Cientificas (**Eficiencia**)
-        - Gran cantidad de computos sobre grandes numeros en punto flotante
-        - **FORTRAN** 
-    - Aplicaciones de Negrocios (**Portabilidad**)
-        - Gran produccion de reportes, manejos de numeros decimales y caracteres.
-        - **COBOL** 
-    - Inteligencia Artificial (**Complejidad**)
-        - Manipulaicon de simbolos en lugar de manipulacion numerica
-        - **LISP**
-    - Programacion de Sistemas - Bases de Datos (**Seguridad**)
-        - Busqueda de eficiencia (por uso continuo)
-        - **Lenguajes ensambladores o C**
-    - Software para la web (**Interoperabilidad**)
-        - Coleccion eclectica de Lenguajes
-        - **XHTML - PHP - JAVA**
+  - Aplicaciones Cientificas (**Eficiencia**)
+    - Gran cantidad de computos sobre grandes numeros en punto flotante
+    - **FORTRAN**
+  - Aplicaciones de Negrocios (**Portabilidad**)
+    - Gran produccion de reportes, manejos de numeros decimales y caracteres.
+    - **COBOL**
+  - Inteligencia Artificial (**Complejidad**)
+    - Manipulaicon de simbolos en lugar de manipulacion numerica
+    - **LISP**
+  - Programacion de Sistemas - Bases de Datos (**Seguridad**)
+    - Busqueda de eficiencia (por uso continuo)
+    - **Lenguajes ensambladores o C**
+  - Software para la web (**Interoperabilidad**)
+    - Coleccion eclectica de Lenguajes
+    - **XHTML - PHP - JAVA**
 
 ### Abstraccion
-    - **Nombres simbolicos** con restricciones
-    - **Expresiones** mas cercanas a la realidad. Introduccion de los primeros chequeos: que exista la operacion, que los operandos sean accesisbles, etc.
-    - **Subprogramas** pensandos solo como una forma de agrupar codigo
-    - **Tipos de datos** 
-        - Los simbolos se indexan variables de memoria con semantica, ya no hay locaciones de memoria anonimas
-        - cada celda esta asociada a un tipo
-        - Avanza el nivel de confiabilidad (chequeo y Seguridad)
-        - Solo tipos de datos que proveia el lenguaje
-        - En la siguiente generacion de lenguajes se extendio a tipos adecuados a diversas areas de aplicacion 
-        - La siguiente generacion brinda pocos tipos primitivos; pero tambien mas constructores generales combinables entre si 
 
-### Estructuras de control 
+- **Nombres simbolicos** con restricciones
+- **Expresiones** mas cercanas a la realidad. Introduccion de los primeros chequeos: que exista la operacion, que los operandos sean accesisbles, etc.
+- **Subprogramas** pensandos solo como una forma de agrupar codigo
+- **Tipos de datos**
+  - Los simbolos se indexan variables de memoria con semantica, ya no hay locaciones de memoria anonimas
+    - cada celda esta asociada a un tipo
+    - Avanza el nivel de confiabilidad (chequeo y Seguridad)
+    - Solo tipos de datos que proveia el lenguaje
+    - En la siguiente generacion de lenguajes se extendio a tipos adecuados a diversas areas de aplicacion
+    - La siguiente generacion brinda pocos tipos primitivos; pero tambien mas constructores generales combinables entre si
+
+### Estructuras de control
+
 A **nivel instruccion: Programacion Estructurada**
-- Hasta ahora habia secuencia y trasnferencia de control y venian ligadas a la arquitectura subyacente. La programacion estructurada propone utilizar: 
-    1. Secuencia 
-    2. Iteracion 
-    3. Condicional
+
+- Hasta ahora habia secuencia y trasnferencia de control y venian ligadas a la arquitectura subyacente. La programacion estructurada propone utilizar:
+  1. Secuencia
+  2. Iteracion
+  3. Condicional
 - En base a las estructuras de control surgen luego la ejecucion simetrica (o concurrente) y manejo de excepciones
 
+A **nivel unidad: Disenio Top-Down**
 
-A **nivel unidad: Disenio Top-Down** 
 - Utilizacion de subprogramas para partir el problema en sub-problemas.
 - Funcionalidad de la unidad: Para resolber sub-problemas
 - Esquemas de relacion entre unidades
-    - Jerarquico 
-    - Simetrico
-    - Paralelo
-    - Latente
+  - Jerarquico
+  - Simetrico
+  - Paralelo
+  - Latente
 
 ### Encapsulamiento
-**Encapsular** -> Inicialmente tenienod en cuenta las acciones 
-                -> Teniendo en cuenta datos 
+
+**Encapsular** -> Inicialmente tenienod en cuenta las acciones
+-> Teniendo en cuenta datos
+
 - Para que el lenguaje sea bueno en abstraccion debe tener encapsulamiento y mecanismo para crear instancias
 - Encapsulamiento sin abstraccion = agrupamiento sin ocultamiento
 
-## Paradigma de los lenguajes de programacion 
+## Paradigma de los lenguajes de programacion
 
 Es una **coleccion de patrones conceptuales** (estructuras o reglas) que juntos **modelan el proceso de disenio** y que determinan en ultima instancia la **estructura de un programa**
+
 - Un estilo de programacion
-- Una manera de visualizar la ejecucion 
-- Una forma de resolver problemas de programacion 
+- Una manera de visualizar la ejecucion
+- Una forma de resolver problemas de programacion
 - Un enfoque, una perspectiva, una filosofia sobre como programar
 
-Los 4 principales paradigmas: 
-    - **Imperativo o procedural** [Pascal, Fortran, C]
-    - **Orientado a Objetos** [Smalltalk, Java]
-    - **Funcional** [Haskel, Lisp, ML]
-    - **Logico** [Prolog, F-Prolog]
-    - **Multiparadigma** JavaScript
+Los 4 principales paradigmas:
+
+- **Imperativo o procedural** [Pascal, Fortran, C]
+- **Orientado a Objetos** [Smalltalk, Java]
+- **Funcional** [Haskel, Lisp, ML]
+- **Logico** [Prolog, F-Prolog]
+- **Multiparadigma** JavaScript
 
 ### Paradigma Imperativo
+
 Un programa es una secuencia de **instrucciones** que indican el flujo de la ejecucion.
-(instruccion)***Senial dada para que se realice el cambio de estado del automata***
+(instruccion)**_Senial dada para que se realice el cambio de estado del automata_**
 
+Las principales caracteristicas son:
 
-Las principales caracteristicas son: 
-    1. Ejecucion secuencial de instrucciones
-    2. Uso de variables represntando calores de locaciones de memoria
-    3. Uso de sentencias de asignacion para cambiar los valores de las variables, permitiendo asi al programa operar sobre las locaciones de memoria
-
+1. Ejecucion secuencial de instrucciones
+2. Uso de variables represntando calores de locaciones de memoria
+3. Uso de sentencias de asignacion para cambiar los valores de las variables, permitiendo asi al programa operar sobre las locaciones de memoria
 
 Se busca estructurar el control realizando una programacion estructurada y modular con abstraccion de datos para fomentar la reusabilidad y extendibilidad.
 
 Los programas se construyen siguiendo una aproximacion:
-    - Top-Down
-    - Modular 
 
-### Paradigma Orientado a Objetos 
-- Se caracteriza por reconocer las entidades del problema (similar a la abstraccion de datos) 
+- Top-Down
+- Modular
+
+### Paradigma Orientado a Objetos
+
+- Se caracteriza por reconocer las entidades del problema (similar a la abstraccion de datos)
 - Caracterizado por atributos y comportamiento (de acuerdo a su proposito y habilidades)
-- Entidad = ***Objetos*** 
+- Entidad = **_Objetos_**
 - Comunicaion por **mensajes**, diferentes a la semantica de llamadas a procedimiento
 
 Busca mejorar los siguientes aspectos del software
-    - **Reusabilidad** 
-    - **Extendibilidad**
 
-### Paradigma Logico 
-Basado en logica de primer orden (lenguaje preciso para expresar conocimiento) **Prolog** 
+- **Reusabilidad**
+- **Extendibilidad**
 
+### Paradigma Logico
 
-Los fundamentos del paradigma son: 
-    - Deducir consecuencias a partir de premisas
-    - Estudiar o decidir el valor de verdad de una sentencia a partir del valor de verdad de otras
-    - Establecer la consistencia entre hechos y verificar la validez de argumentos
+Basado en logica de primer orden (lenguaje preciso para expresar conocimiento) **Prolog**
 
+Los fundamentos del paradigma son:
+
+- Deducir consecuencias a partir de premisas
+- Estudiar o decidir el valor de verdad de una sentencia a partir del valor de verdad de otras
+- Establecer la consistencia entre hechos y verificar la validez de argumentos
 
 Caracteristicas de los lenguajes logicos
-    - Eliminacion del control
-    - El concepto de variable es mas matematico, son nombres que retienen valores 
-    - Establecen *que* es lo que se debe hacer sin dar ninguna especificacion sobre el *como* hacerlo 
 
+- Eliminacion del control
+- El concepto de variable es mas matematico, son nombres que retienen valores
+- Establecen _que_ es lo que se debe hacer sin dar ninguna especificacion sobre el _como_ hacerlo
 
-Caracteristicas de los programas logicos 
-    - Conjuntos de axiomas que establecen relaciones
-    - Definen un conjunto de consecuencias que determinan el significado
-    - Son teoremas y la ejecucion es una prueba automatica
+Caracteristicas de los programas logicos
 
-### Paradigma funcional 
+- Conjuntos de axiomas que establecen relaciones
+- Definen un conjunto de consecuencias que determinan el significado
+- Son teoremas y la ejecucion es una prueba automatica
+
+### Paradigma funcional
+
 La esencia de esta metodologia esta en componer funciones para definir otras mas complejas.
 
-**Funcion**: 
-    - **Regla** que mapea un valor del dominio en uno correspondiente al rango
-    - Requiere establecer una **signatura** y una **regla de mapeo** 
-    - En la definicion se establecen los parametros.
-      En la aplicacion se habla de argumentos 
-      El retorno de la funcion provee el resultado
+**Funcion**:
 
+- **Regla** que mapea un valor del dominio en uno correspondiente al rango
+- Requiere establecer una **signatura** y una **regla de mapeo**
+- En la definicion se establecen los parametros.
+  - En la aplicacion se habla de argumentos
+  - El retorno de la funcion provee el resultado
 
 Caracteristicas de los lenguajes funcionales
-    - Define un conjunto de datos
-    - Provee un conjunto de funciones primitivas 
-    - Provee un conjunto de formas funcionales 
-    - Requiere de un operador de aplicacion 
 
-Caracteristicas de los programas funcionales 
-    - Semantica basada en valores 
-    - Transparencia referencial
-    - Regla de mapeo basada en combinacion o composicion
-    - Las funciones son *ciudadanos* de primer orden
+- Define un conjunto de datos
+- Provee un conjunto de funciones primitivas
+- Provee un conjunto de formas funcionales
+- Requiere de un operador de aplicacion
+
+Caracteristicas de los programas funcionales
+
+- Semantica basada en valores
+- Transparencia referencial
+- Regla de mapeo basada en combinacion o composicion
+- Las funciones son _ciudadanos_ de primer orden
 
 ## Metodos de implementacion
-    
+
 Cosas a tener en cuenta cuando diseniamos un Lenguaje de programacion
-    - **Donde se ejecutaran los programas** o la computadora subyacente
-    - **Modelo de ejecucion** o computadora virtual que soporta el lenguaje en el HW real 
-    - **Metodologia de programacion** que es el modelo computacional que implementa el lenguaje 
+
+- **Donde se ejecutaran los programas** o la computadora subyacente
+- **Modelo de ejecucion** o computadora virtual que soporta el lenguaje en el HW real
+- **Metodologia de programacion** que es el modelo computacional que implementa el lenguaje
 
 Los lenguajes imperativos son los mas dominantes (por la influencia de arquitecturas de computadoras)
-    - Datos y programas almacenados en la memoria
-    - La memoria esta separada del CPU 
-    - Instrucciones y datos se conectan en la memoria al CPU 
-    - Bases para lenguajes imperativos 
-        - Celdas de memoria - variables 
-        - Sentencias de asignacion 
-        - Iteracion es eficiente 
+
+- Datos y programas almacenados en la memoria
+- La memoria esta separada del CPU
+- Instrucciones y datos se conectan en la memoria al CPU
+- Bases para lenguajes imperativos
+  - Celdas de memoria - variables
+  - Sentencias de asignacion
+  - Iteracion es eficiente
 
 ### Influencias de metodologias de programacion
-| 50s - principios 60s | finales 60s | finales 70s | mediados 80s |
-| -------------------- | ----------- | ----------- | ------------ |
-| aplicaciones simples | Programacion estructurada | O. a procesos -> O. a datos | POO |
-| Eficiencia de la maquina | Disenio top-down (divide y venceras) | --- | --- | 
+
+| 50s - principios 60s     | finales 60s                          | finales 70s                 | mediados 80s |
+| ------------------------ | ------------------------------------ | --------------------------- | ------------ |
+| aplicaciones simples     | Programacion estructurada            | O. a procesos -> O. a datos | POO          |
+| Eficiencia de la maquina | Disenio top-down (divide y venceras) | ---                         | ---          |
 
 ### Computadora
 
-Es un **conjunto integrado de algoritmos** y **estructura de datos** capaz de **almacenar programas** y **ejecutar computaciones** 
+Es un **conjunto integrado de algoritmos** y **estructura de datos** capaz de **almacenar programas** y **ejecutar computaciones**
 
 #### Componentes
-Los componentes principales de una corresponden a los aspectos principales de un lenguaje de programacion (desde el punto de vista de un disenador) 
-1. **Datos (estructuras)**: Distintos tipos de datos elementales y tipos de datos estructurados 
-2. **Operaciones primitivas** 
+
+Los componentes principales de una corresponden a los aspectos principales de un lenguaje de programacion (desde el punto de vista de un disenador)
+
+1. **Datos (estructuras)**: Distintos tipos de datos elementales y tipos de datos estructurados
+2. **Operaciones primitivas**
 3. **Control de secuencias**: Se controla cual es el orden de ejecucion de las operaciones primitivas
-4. **Acceso de los datos**: Se controla que datos se les entrega a una operacion para cada ejecucion 
-5. **Gestion de almacenamiento** Se controla la disposicion del almacenamiento para los programas y los datos 
-6. **Entorno operativo**: Se proveen mecanismos para la comunicacion con el entorno externo que contiene datos y programas 
+4. **Acceso de los datos**: Se controla que datos se les entrega a una operacion para cada ejecucion
+5. **Gestion de almacenamiento** Se controla la disposicion del almacenamiento para los programas y los datos
+6. **Entorno operativo**: Se proveen mecanismos para la comunicacion con el entorno externo que contiene datos y programas
 
-#### Elementos 
+#### Elementos
 
-Datos 
-- Memoria principal 
-- Registros del procesador 
+Datos
+
+- Memoria principal
+- Registros del procesador
 - Archivos externos
-- Memoria cache 
+- Memoria cache
 
-Operaciones 
+Operaciones
+
 - Un conjunto incluido de operaciones primitivas
 - Operaciones aritmeticas en cada tipo de datos incorporado
-- Controles/test de algunas propiedades de los items de datos 
-- Permitir el acceso y modificacion de partes de un item de dato 
+- Controles/test de algunas propiedades de los items de datos
+- Permitir el acceso y modificacion de partes de un item de dato
 - Controlar los dispositivos de entrada-salida
 - Control de secuencias (jumps | goto)
 
 Control de secuencia (**Utilizando los registros de direcciones**)
+
 - Existe un interprete ( Siempre sucede esto? )
-- Interpretacion y ejecucion de programas 
-    - Buscar una instruccion 
-    - Decodificar la instruccion 
-    - Buscar los operandos asignados 
-    - Bifurcar a la operacion asignada 
-    - Ejecutar las operaciones primitivas 
- 
-Acceso a datos 
+- Interpretacion y ejecucion de programas
+  - Buscar una instruccion
+  - Decodificar la instruccion
+  - Buscar los operandos asignados
+  - Bifurcar a la operacion asignada
+  - Ejecutar las operaciones primitivas
+
+Acceso a datos
+
 - Acceder a los operandos de la operacion
-- Entero para indicar una celda de memoria con algun tipo de dato determinado 
+- Entero para indicar una celda de memoria con algun tipo de dato determinado
 
 Gestion de almacenamiento (**Multiprogramacion, uso de memoria cache**)
-- Gestionar todos los recursos de la computadora, y que operen lo maximo posible 
-    - Memoria
-    - Procesador central 
-    - Dispositivos de datos externos 
+
+- Gestionar todos los recursos de la computadora, y que operen lo maximo posible
+  - Memoria
+  - Procesador central
+  - Dispositivos de datos externos
 
 Entorno operativo (**conjunto de perifericos y dispositivos de entrada-salida**)
-- El mundo externo a la computadora 
 
-Organizacion de una computadora 
-- **Vision estatica**: Estructura 
+- El mundo externo a la computadora
+
+Organizacion de una computadora
+
+- **Vision estatica**: Estructura
 - **Vision dinamica**: Estado - dinamica de las operaciones en la estructura estatica en la secuencia de transiciones de estados realizadas por la computadora
 
 #### Computadora virtual
-- **En principio** se uso para construir programas para usar eficientemente el HW de las computadoras 
-- **Posteriormente**: 
-    - Se dejo de escribir directamente en codigo maquina
-    - Se usan *capas* para definir el software
-    - Cada capa es una maquina que provee funciones a la proxima capa 
 
-##### Tipos de computadoras virtuales 
+- **En principio** se uso para construir programas para usar eficientemente el HW de las computadoras
+- **Posteriormente**:
+  - Se dejo de escribir directamente en codigo maquina
+  - Se usan _capas_ para definir el software
+  - Cada capa es una maquina que provee funciones a la proxima capa
 
-- **Dura (Hardware)**: Datos elementales, operaciones muy simples 
-- **Semiblanda (Firmware)**: Datos elementales, instrucciones en lenguaje maquina 
-- **Blanda (Software)**: Cada entorno de programacion establece una computadora *Blanda* especifica 
+#### Tipos de computadoras virtuales
 
-### Tipos de lenguajes en base a su programa generado 
+- **Dura (Hardware)**: Datos elementales, operaciones muy simples
+- **Semiblanda (Firmware)**: Datos elementales, instrucciones en lenguaje maquina
+- **Blanda (Software)**: Cada entorno de programacion establece una computadora _Blanda_ especifica
+
+### Tipos de lenguajes en base a su programa generado
 
 - **Compilacion**: Los programas son traducidos al codigo de la maquina subyacente
 - **Interpretacion pura**: Los programas son interpretados por otro programa conocido como interprete
-- **Sistemas hibridos**: 
-    - Compromiso enrte los compiladores y los interpretes puros 
-    - Un programa en lenguaje de alto nivel se traduce a un lenguaje intermedio que permite una facil interpretacion 
-    - Usan maquinas virtuales (JAVA, PERL)
+- **Sistemas hibridos**:
+  - Compromiso enrte los compiladores y los interpretes puros
+  - Un programa en lenguaje de alto nivel se traduce a un lenguaje intermedio que permite una facil interpretacion
+  - Usan maquinas virtuales (JAVA, PERL)
 
+#### Compilacion
 
+Es la accion de traducir un programa en lenguaje de lato nivel a codigo maquina. Una de sus **contras** es que la traduccion es lenta, y su mayor **beneficio** es que su ejecucion es rapida.
+
+El proceso de compilacion tiene varias fases:
+
+- Analisis lexico: convierte los caracteres del programa fuente en unidades lexicas (buscar que significa)
+- Analisis sintactico: transforma las unidades lexicas en arboles sintacticos que representan la estructura sintactica de un programa (buscar que significa)
+- Analisis semantico: arbol etiquetado
+- Generacion de codigo intermedio
+- Generacion de codigo: traduccion a codigo maquina
+
+#### Interpretacion pura
+
+No hay traduccion, el mayor **beneficio** que posee es que tiene una implementacion mas sencilla de los programas (mas facil de debuggear). Una de las **contras** es que su ejecucion es mas lenta. A veces requieren mas espacio (al no estar optimizado su codigo), no es habitual en los lenguajes de alto nivel y es moda en algunos lenguajes script de web.
+
+#### Sistenas hibridos
+
+Son un compromiso entre los compiladores y los interpretes puros. Un programa en lenguaje de alto nivel se traduce a un lenguaje intermedio que permite una facil interpretacion. Son muchos mas rapido que la interpretacion pura.
+
+Algunos ejemplos son: **Perl** y implementaciones iniciales de **Java**.
+
+#### Pre-Procesadores
+
+Las macros de preprocesamiento se usan para especificar que codigo de otro archivo sera incluido, condiciones del codigo destino, etc. Un pre-procesador procesa el programa antes de que el programa se compile para _expandir_ las macros embebidas en el codigo.
+
+Ejemplos de preprocesador C: **#include #define**
+
+## Analisis Sintactico
+
+```
+bibliografia:
+    Programming Languages: Design and Implementation - Pratt,Terrance
+        Cap 3 y 4
+    Concepts of Programming Languages - Sebesta, Robert
+        Cap 1 y 3
+    Prgramming Languages: principles and practices - Louden, Kenneth
+        Cap 1 y 6
+```
+
+- **Alfabeto**: es un conjunto de cadenas de caracteres elegidas de un conjunto finito y fijo de simbolos.
+- **Frases/Constructores**: Las cadenas que pertenecen al lenguaje.
+
+### Descripcion del lenguaje
+
+- **Sintaxis**: Es la descripcion del formato de los programas del lenguaje (_como se forman las frases_)
+- **Semantica**: Estudia el comportamiendo de los programas (_significado de las frases_)
+- **Pragmatica**: Estudia aspectos relacionados con las tecnicas empleadas para la construccion de programas.
+  - Grado de exito con el que un programa cumple sus objetivos tanto en su fidelidad con el modelo de computacion subyacente como su utilidad para los programadores.
+
+TLDR: La construccion sintactica nos dice como se hacen las cosas (reglas) dentro del lenguaje, la semantica nos dice que hace cada regla y por ultimo la pragmatica nos dice cual es el uso de esa regla.
+
+### Errores (segun la fase de traduccion en la que ocurren)
+
+- **Lexicos** ocurren durante el analisis lexico:
+  - caracteres ilegales
+  - errores ortograficos
+- **Sintacticos** incluyen tokens faltantes y expresiones mal organizadas
+- **Semanticos**
+  - **Estaticos** (detectatos antes de la ejecucion) Tipos incompatibles o variables no declaradas
+  - **Dinamicos** (detectados durante la ejecucion) Un subinidice fuera de rango o la division entre cero.
+- **Logicos** son aquellos que comete el programador y que hacen que el programa se comporte de manera erronea o no deseable.
+
+#### Definicion formal de lenguajes
+
+**Reconocedores**
+
+- Un dispositivo de reconocimiento lee cadenas de entrada de un lenguaje y decida si la entrada pertenece o no al lenguaje
+
+**Generadores**
+
+- Un dispositivo que genera las oraciones de un lenguaje. Uno puede determinar si la sintaxis de una sentencia partucular es correcta, comparandolas con la generada por un generador.
+
+#### Descripcion de la sintaxis
+
+**Terminologia**
+
+- **Sentencia** es una cadena de caracteres pertenecientes a un alfabeto
+- **Lenguaje** es un conjunto de sentencias
+- **Lexema** es la unidad sintactica basica de un lenguaje
+- **Token** es una categoria de lexemas
+
+Tres mecanismos describen el diseño e implementaicon de los lenguajes de programacion:
+
+1. Expresiones regulares
+2. Gramaticas formales
+3. Gramaticas de atributos
+
+- La ER nos premitiran definir los lexemas o tokens
+- Las GF definiran sintaxis y las GA definiran la semantica estatica.
+
+#### Derivacion
+
+- Cada **cadena de simbolos** en una derivacion esta en **forma sentencial**
+- Una **sentencia** (frase u oraicon) es una **forma sentencial** que solo tiene **simbolos terminales**
+- Una \*\*derivacion izquierda es aquella en la cual se expande el no terminal mas a la izquierda de cada forma sentencial
+- Una derivacion puede ser a izquierda o a derecha
+
+BNF, es como se escriben las reglas de gramaticas en TC < exp > -> < exp > + < term >
+
+E-BNF es similar a lo de arriba nada mas que se agrupan los simbolos del lenguaje
+< exp > -> < term > (+|-) < term >
+
+#### Ambiguedad sintactica
+
+Una gramatica es ambigua si posee alguna de estas caracteristicas:
+
+- Si la gramatica genera una sentencia con mas de una derivacion a izquierda o mas de una derivacion a derecha.
+
+### Gramaticas de atributos
+
+- **Semantica estatica**
+  - Una GA es un mecanismo utilizado para describir mas de lo que se puede con una GLC pero que pueden ser evaluados en compilacion
+  - Es una extension de las GLC, permite la descripcion de ciertas reglas del lenguaje como la compatibilidad de tipos
+  - La idea es agregarle a la gramatica tradicional, informacion sematica a lo largo del arbol de parsing
+- **GA se define como**:
+  - Una GLC a la cual se le han agregado atributos, funciones para la evaluacion de atributos y funciones de predicado.
+- **Atributo**
+  - Asociados a los simbolos de la gramatica, son similares a las variables (pueden tener valores asociados)
+- **Funciones para la evaluaicon de atributos**
+  - Llamadas funciones semanticas, estan asociadas a las reglas de la gramatica. Son utilizadas para indicar como los atributos especificados son computados
+- **Funcion predicado**
+
+  - Determinan la regla semantica estatica del lenguaje, estan asociadas a reglas de la gramatica.
+
+- Definicion GA
+
+Una GA es una GLC G = (S,N,T,P) con los siguientes agregados:
+
+- Para cada simbolo de la gramatica X, hay un conjunto de atributos
+- El conjunto se divide en dos conjuntos disjutnos **atributos sintetizados y heredados** respectivamente
+- Hay atributos intrinsecos en las hojas de arbol de derivacion
+- Cada regla tiene un conjunto de **funcione** que definen ciertos atributos de los no-terminales en la regla
+- Cada regla tiene un conjunto (posiblemente vacio) de **predicados** para chequear la consistencia de los atributos
+
+## Semantica
+
+- Los programadores necesitan **conocer** precisamente lo que **las sentencias del lenguaje hacen**. Pero generalmente lo infieren de las explicaicones en ingles que aparecen en los _manuales de los lenguajes_.
+- Los creadores de compiladores determinan la semantica del lenguaje para la que escriben el compilador nuevamente a partir de estas especificaciones en lenguaje natural.
+
+Se han desarrollado varios sitemas notacionales para la definicion fomal de la semnatica que estan incrementalmente en uso:
+
+- A traves del manual de referencia del lenguaje:
+- A traves del traductor:
+- A traves de una definicion formal:
+
+### Tipos
+
+Metodos de prueba:
+
+- Semantica operacional
+- Semantica axiomatica
+  Modelo teorico:
+- Semantica denotacional
